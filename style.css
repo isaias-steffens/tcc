@@ -1,0 +1,367 @@
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+:root {
+    --primary: #286f43;
+    --primary-dark: #1d5332;
+    --primary-light: #c9e5d1;
+
+    --background: #eef1ef;
+    --white: #ffffff;
+
+    --text: #343b36;
+    --text-light: #59635c;
+
+    --border: #dce4de;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.main-header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 1000;
+}
+
+.main-header .navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: var(--primary) !important;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.navbar-brand i {
+    font-size: 25px;
+}
+
+.nav-link {
+    color: var(--text) !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 12px !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.dropdown-menu {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-item {
+    padding: 9px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--border);
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.btn-success {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-success:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-access {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 17px;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.btn-access:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+
+/* ========================================
+   APRESENTAÇÃO PRINCIPAL
+======================================== */
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary)
+    );
+
+    color: var(--white);
+    padding: 100px 20px;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--primary-light);
+}
+
+.hero-section h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 strong {
+    font-weight: 700;
+}
+
+.hero-description {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-section .btn {
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 7px;
+    color: var(--primary-dark);
+}
+
+
+/* ========================================
+   IDENTIFICAÇÃO INSTITUCIONAL
+======================================== */
+
+.institution-section {
+    padding: 70px 0;
+}
+
+.institution-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 55px 35px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.institution-header p {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.institution-card h2 {
+    font-size: 16px;
+    color: var(--primary);
+    margin: 35px 0;
+    font-weight: bold;
+}
+
+.institution-project h3 {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.institution-project p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.institution-project span {
+    display: block;
+    margin-top: 35px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   SOBRE O PROJETO
+======================================== */
+
+.about-section {
+    padding: 65px 20px 80px;
+    background-color: var(--white);
+}
+
+.about-section h2 {
+    color: var(--primary-dark);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 760px;
+    margin: 0 auto 25px;
+    color: var(--text-light);
+    font-size: 16px;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.main-footer {
+    background-color: #1d3526;
+    color: var(--white);
+    padding: 45px 20px 25px;
+    text-align: center;
+}
+
+.footer-brand {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-brand i {
+    margin-right: 7px;
+}
+
+.main-footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-institution {
+    color: #c9d8cd;
+}
+
+.footer-divider {
+    max-width: 500px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 25px auto;
+}
+
+.footer-copyright {
+    color: #b5c5ba;
+    font-size: 12px !important;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+
+    .navbar-nav {
+        align-items: stretch !important;
+    }
+
+    .nav-link {
+        padding: 10px 5px !important;
+    }
+
+    .nav-item.ms-lg-3 {
+        margin: 10px 0 0;
+    }
+
+    .btn-access {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 75px 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .institution-section {
+        padding: 40px 15px;
+    }
+
+    .institution-card {
+        padding: 35px 20px;
+    }
+
+    .institution-header p {
+        font-size: 11px;
+    }
+
+    .institution-project h3 {
+        font-size: 19px;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+    }
+
+}
