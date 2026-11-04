@@ -84,7 +84,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="/tcc/paginas/cronograma.php">
-                            Cronograma
+                            Regis soares brizola
                         </a>
                     </li>
 
