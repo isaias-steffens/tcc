@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -31,9 +31,9 @@
                 <h1>Hospedagem e infraestrutura</h1>
 
                 <p>
-                    Instalação e disponibilização do sistema em um servidor
-                    local, utilizando a estrutura de rede e os recursos
-                    tecnológicos disponíveis na instituição.
+                    Montagem, configuração e disponibilização do ControlPRINT,
+                    utilizando equipamentos reaproveitados e serviços de
+                    hospedagem e gerenciamento de domínio.
                 </p>
 
             </div>
@@ -46,24 +46,81 @@
 
                 <article class="content-card">
 
-                    <h2>Como hospedar o sistema localmente?</h2>
+                    <h2>Montagem do servidor</h2>
 
                     <p>
-                        Para disponibilizar o ControlPRINT aos usuários
-                        da instituição, foi utilizada uma estrutura de
-                        hospedagem local, baseada em um servidor conectado
-                        à rede escolar. Essa solução permite centralizar
-                        os serviços de gerenciamento de impressões sem
-                        depender da instalação individual da plataforma
-                        em cada computador.
+                        O servidor do ControlPRINT foi construído utilizando
+                        peças antigas do servidor do CEEDO, incluindo o
+                        monitor, o teclado e o mouse, que foram reaproveitados
+                        para sua montagem.
+                    </p>
+
+
+                    <h2>Hospedagem do sistema</h2>
+
+                    <p>
+                        A hospedagem foi realizada por meio da plataforma
+                        Hostinger, ferramenta utilizada para criar, hospedar
+                        e gerenciar sites, lojas virtuais e aplicações na
+                        internet. Nela, foi configurado o subdomínio
+                        ceedo.com.br, pertencente ao domínio oficial do site
+                        da escola.
+                    </p>
+
+
+                    <h2>Configuração inicial de acesso</h2>
+
+                    <p>
+                        Inicialmente, o acesso ao site do ControlPRINT era
+                        realizado diretamente pelo endereço IP do servidor,
+                        acompanhado de sua respectiva porta. No entanto,
+                        essa configuração apresentava uma questão de
+                        segurança, pois deixava o endereço IP do servidor
+                        exposto a todos os usuários que acessassem o site.
+                    </p>
+
+
+                    <h2>Configuração do endereço IP fixo</h2>
+
+                    <p>
+                        Após a montagem e configuração inicial do servidor,
+                        foi definido um endereço IP fixo para ele. Essa
+                        configuração foi necessária para garantir que o
+                        servidor mantivesse sempre o mesmo endereço dentro
+                        da rede, evitando alterações que poderiam comprometer
+                        o acesso ao sistema.
+                    </p>
+
+
+                    <h2>Configuração do DNS</h2>
+
+                    <p>
+                        Em seguida, foi realizada a configuração do DNS por
+                        meio da ONT (terminal de rede óptica) da conexão de
+                        fibra óptica. Nessa etapa, foi criado um registro
+                        do tipo <strong>Classe A</strong>, responsável por
+                        associar um nome de domínio a um endereço IPv4.
+                        Dessa forma, o domínio utilizado pelo ControlPRINT
+                        foi direcionado ao endereço IP fixo configurado
+                        anteriormente no servidor.
                     </p>
 
                     <p>
-                        A utilização da infraestrutura local também
-                        possibilita aproveitar os equipamentos e recursos
-                        de rede já disponíveis na escola, facilitando
-                        a comunicação entre o servidor, os computadores
-                        e as impressoras conectadas.
+                        Com essa configuração, quando um usuário acessa
+                        o endereço do ControlPRINT pelo navegador, o DNS
+                        realiza a resolução do domínio, identificando o
+                        endereço IP correspondente ao servidor. Assim,
+                        o acesso deixa de depender da digitação direta
+                        do endereço IP e da porta, tornando a utilização
+                        do sistema mais simples e organizada.
+                    </p>
+
+                    <p>
+                        Essa implementação também facilitou o gerenciamento
+                        do acesso ao ControlPRINT, pois, caso fosse necessário
+                        alterar o endereço IP do servidor no futuro, bastaria
+                        atualizar o registro DNS correspondente, mantendo
+                        o mesmo domínio de acesso para os usuários.
                     </p>
 
 
@@ -181,22 +238,32 @@
                     </p>
 
 
-                    <h2>Vantagens da hospedagem local</h2>
+                    <h2>Vantagens da hospedagem e infraestrutura</h2>
 
                     <ul>
                         <li>
+                            Reaproveitamento de equipamentos antigos
+                            para a montagem do servidor.
+                        </li>
+
+                        <li>
+                            Utilização de domínio próprio para facilitar
+                            o acesso ao sistema.
+                        </li>
+
+                        <li>
+                            Configuração de endereço IP fixo para manter
+                            a estabilidade da conexão.
+                        </li>
+
+                        <li>
+                            Associação do domínio ao endereço IP por meio
+                            da configuração DNS.
+                        </li>
+
+                        <li>
                             Centralização dos serviços de impressão
                             em um único servidor.
-                        </li>
-
-                        <li>
-                            Acesso ao painel por diferentes computadores
-                            conectados à rede escolar.
-                        </li>
-
-                        <li>
-                            Aproveitamento da infraestrutura tecnológica
-                            já existente na instituição.
                         </li>
 
                         <li>
@@ -239,3 +306,4 @@
 
 </body>
 </html>
+```
