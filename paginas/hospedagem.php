@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -306,4 +306,3 @@
 
 </body>
 </html>
-```
