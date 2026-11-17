@@ -97,7 +97,7 @@
                     <!-- Acesso ao sistema -->
                     <li class="nav-item ms-lg-3">
                         <a class="btn btn-access"
-                           href="http://controlprint.ceedo.com.br"
+                           href="http://controlpanel.ceedo.com.br/"
                            target="_blank" rel="noopener noreferrer">
 
                             <i class="bi bi-box-arrow-up-right"></i>
