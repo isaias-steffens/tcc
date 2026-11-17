@@ -27,13 +27,13 @@
                 <ul class="navbar-nav ms-auto align-items-lg-center">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/tcc/index.php">
+                        <a class="nav-link" href="/index.php">
                             Início
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/tcc/paginas/introducao.php">
+                        <a class="nav-link" href="/paginas/introducao.php">
                             Projeto
                         </a>
                     </li>
@@ -50,25 +50,25 @@
                         <ul class="dropdown-menu">
 
                             <li>
-                                <a class="dropdown-item" href="/tcc/paginas/painel.php">
+                                <a class="dropdown-item" href="/paginas/painel.php">
                                     Painel administrativo
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="/tcc/paginas/impressoras.php">
+                                <a class="dropdown-item" href="/paginas/impressoras.php">
                                     Impressoras em rede
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="/tcc/paginas/gastos.php">
+                                <a class="dropdown-item" href="/paginas/gastos.php">
                                     Controle de gastos
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="/tcc/paginas/hospedagem.php">
+                                <a class="dropdown-item" href="/paginas/hospedagem.php">
                                     Hospedagem e infraestrutura
                                 </a>
                             </li>
@@ -77,19 +77,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/tcc/paginas/linhas.php">
+                        <a class="nav-link" href="/paginas/linhas.php">
                             Linhas de pesquisa
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/tcc/paginas/cronograma.php">
+                        <a class="nav-link" href="/paginas/cronograma.php">
                             Cronograma
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/tcc/paginas/referencias.php">
+                        <a class="nav-link" href="/paginas/referencias.php">
                             Referências
                         </a>
                     </li>
